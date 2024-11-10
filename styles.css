@@ -1,0 +1,175 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f9e0e0, #ffd5e5);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.full-screen {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid #ddd;
+}
+
+header {
+    background-color: #f9e0e0;
+    border-bottom: none;
+}
+
+h1, h2, h3 {
+    color: #8b4513;
+    margin: 10px 0;
+}
+
+.content {
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.animate-it {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.show-animation {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+footer {
+    background-color: #f9e0e0;
+    border-top: none;
+}
+
+.wedding-date .date {
+    font-size: 3em;
+    color: #8b4513;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+}
+
+.calendar-grid .day-label {
+    background-color: #f9e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.calendar-grid .day {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.calendar-grid .wedding-day {
+    background-color: #ff69b4;
+    color: #fff;
+    position: relative;
+}
+
+.calendar-grid .wedding-day::before {
+    content: "❤️";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #f9e0e0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+button {
+    background-color: #8b4513;
+    color: #fff;
+    cursor: pointer;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.contact-item {
+    background-color: #f9e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.countdown {
+    font-size: 2em;
+    color: #8b4513;
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 10px;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .wedding-date .date {
+        font-size: 2em;
+    }
+
+    .calendar-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .countdown {
+        font-size: 1.5em;
+    }
+}

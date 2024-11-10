@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="full-screen">
+        <div class="content animate-it">
+            <h1>Приглашение на свадьбу</h1>
+            <h2>Имя Невесты и Имя Жениха</h2>
+        </div>
+    </header>
+
+    <section class="full-screen wedding-date">
+        <div class="content animate-it">
+            <h3 class="date">15 августа 2025</h3>
+        </div>
+    </section>
+
+    <section class="full-screen">
+        <div class="content animate-it">
+            <h3>Программа</h3>
+            <p>18:00 - Приветственный коктейль</p>
+            <p>19:00 - Церемония бракосочетания</p>
+            <p>20:00 - Банкет</p>
+            <p>23:00 - Дискотека</p>
+        </div>
+    </section>
+
+    <section class="full-screen">
+        <div class="content animate-it">
+            <h3>Как добраться</h3>
+            <p>Замок "Счастье" находится по адресу: ул. Счастливая, 123, город Радость.</p>
+        </div>
+    </section>
+
+    <section class="full-screen calendar">
+        <div class="content animate-it">
+            <h3>Календарь</h3>
+            <div class="calendar-grid">
+                <div class="day-label">Пн</div>
+                <div class="day-label">Вт</div>
+                <div class="day-label">Ср</div>
+                <div class="day-label">Чт</div>
+                <div class="day-label">Пт</div>
+                <div class="day-label">Сб</div>
+                <div class="day-label">Вс</div>
+                <!-- Август 2025 -->
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+                <div class="day wedding-day">15</div>
+                <div class="day">16</div>
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+                <div class="day">31</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="full-screen form">
+        <div class="content animate-it">
+            <h3>Анкета для гостей</h3>
+            <form>
+                <label for="name">ФИО:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="attendance">Сможете ли присутствовать на нашем торжестве?</label>
+                <div class="radio-group">
+                    <label><input type="radio" name="attendance" value="yes" required> Да, с удовольствием приду</label>
+                    <label><input type="radio" name="attendance" value="no" required> К сожалению не смогу присутствовать</label>
+                    <label><input type="radio" name="attendance" value="later" required> Сообщу позже</label>
+                </div>
+
+                <button type="submit">Отправить</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="full-screen contacts">
+        <div class="content animate-it">
+            <h3>Контакты</h3>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <h4>Невеста</h4>
+                    <p>Имя Невесты</p>
+                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+                    <p>Email: bride@example.com</p>
+                </div>
+                <div class="contact-item">
+                    <h4>Жених</h4>
+                    <p>Имя Жениха</p>
+                    <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+                    <p>Email: groom@example.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="full-screen countdown">
+        <div class="content animate-it">
+            <h3>До свадьбы осталось:</h3>
+            <div id="countdown"></div>
+        </div>
+    </section>
+
+    <footer class="full-screen">
+        <div class="content animate-it">
+            <p>С любовью, Имя Невесты и Имя Жениха</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
