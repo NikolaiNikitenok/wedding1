@@ -63,17 +63,11 @@ footer {
     color: #8b4513;
 }
 
-.calendar-grid-container {
-    overflow-x: auto;
-    width: 100%;
-}
-
 .calendar-grid {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     gap: 10px;
     width: 100%;
-    min-width: 600px;
 }
 
 .calendar-grid .day-label {
@@ -166,6 +160,17 @@ button {
 
     .wedding-date .date {
         font-size: 2em;
+    }
+
+    .calendar-grid {
+        grid-template-columns: repeat(7, minmax(30px, 1fr));
+        gap: 5px;
+    }
+
+    .calendar-grid .day-label,
+    .calendar-grid .day {
+        padding: 5px;
+        font-size: 0.8em;
     }
 
     .contact-info {
