@@ -192,4 +192,9 @@ button {
     .contacts {
         height: 80vh;
     }
+
+    .form {
+        height: auto;
+        min-height: 50vh;
+    }
 }
