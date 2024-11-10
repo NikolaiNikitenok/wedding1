@@ -45,7 +45,7 @@ h1, h2, h3 {
 .animate-it {
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .show-animation {
@@ -183,5 +183,9 @@ button {
 
     .full-screen {
         height: 50vh;
+    }
+
+    .contact-item {
+        padding: 10px;
     }
 }
