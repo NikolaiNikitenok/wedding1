@@ -180,4 +180,8 @@ button {
     .countdown {
         font-size: 1.5em;
     }
+
+    .full-screen {
+        height: 50vh;
+    }
 }
